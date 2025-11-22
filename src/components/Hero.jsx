@@ -1,0 +1,59 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ArrowDown } from 'lucide-react';
+import Background from './3d/Background';
+import { personalInfo } from '../data';
+
+const Hero = () => {
+    return (
+        <section className="relative w-full h-screen mx-auto bg-slate-950 overflow-hidden">
+            <Background />
+
+            <div className="absolute inset-0 flex flex-col justify-center items-center z-10 px-6 text-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                    <h2 className="text-sm md:text-lg uppercase tracking-[0.2em] text-cyan-400 mb-4">
+                        Welcome to my portfolio
+                    </h2>
+                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                        Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">{personalInfo.name}</span>
+                    </h1>
+                    <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto font-light">
+                        {personalInfo.role}
+                    </p>
+                </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1.2 }}
+                    className="absolute bottom-10 w-full flex justify-center items-center"
+                >
+                    <a href="#about">
+                        <div className="w-[35px] h-[64px] rounded-3xl border-4 border-slate-500 flex justify-center items-start p-2">
+                            <motion.div
+                                animate={{
+                                    y: [0, 24, 0],
+                                }}
+                                transition={{
+                                    duration: 1.5,
+                                    repeat: Infinity,
+                                    repeatType: 'loop',
+                                }}
+                                className="w-3 h-3 rounded-full bg-slate-300 mb-1"
+                            />
+                        </div>
+                    </a>
+                </motion.div>
+            </div>
+
+            {/* Gradient overlay for smooth transition to next section */}
+            <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-slate-950 to-transparent z-10" />
+        </section>
+    );
+};
+
+export default Hero;
