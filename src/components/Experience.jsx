@@ -85,7 +85,7 @@ const ExperienceCard = ({ exp, index, isOpen, toggleOpen }) => {
 
                                 {exp.logo && (
                                     <div className="hidden md:flex flex-col items-center justify-center min-w-[150px]">
-                                        <div className="w-32 h-32 bg-white rounded-xl p-4 flex items-center justify-center">
+                                        <div className="w-32 h-32  rounded-xl p-4 flex items-center justify-center">
                                             <img
                                                 src={exp.logo}
                                                 alt={`${exp.company} logo`}

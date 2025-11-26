@@ -49,7 +49,7 @@ const Skills = () => {
             <div className="flex flex-col md:flex-row flex-1 max-w-[1600px] mx-auto w-full relative z-10">
 
                 {/* Left Sidebar - Filters */}
-                <div className="w-full md:w-1/4 px-6 md:pl-20 flex flex-col gap-4 z-50 mb-10 md:mb-0 md:pt-20">
+                <div className="w-full md:w-1/4 px-3 md:pl-20 flex flex-col gap-4 z-50 mb-10 md:mb-0 md:pt-20">
                     <h3 className="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-4 hidden md:block">Categories</h3>
                     <div className="flex flex-wrap md:flex-col gap-3">
                         <button

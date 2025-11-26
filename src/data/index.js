@@ -20,7 +20,7 @@ export const skills = {
         { name: "Jenkins", icon: "https://skillicons.dev/icons?i=jenkins" },
         // { name: "CI/CD", icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-ci-cd-devops-flaticons-lineal-color-flat-icons.png" },
         { name: "Ansible", icon: "https://skillicons.dev/icons?i=ansible" },
-        { name: "Chef", icon: "https://cdn.prod.website-files.com/62a8969da1ab56329dc8c41e/643ccf55b8f65176b8927b44_637c6f908e6c817352497d0e_chef-software-vector-logo.png" },
+        { name: "Chef", icon: "public/CHEF.png" },
         { name: "Terraform", icon: "https://skillicons.dev/icons?i=terraform" },
         { name: "Git", icon: "https://skillicons.dev/icons?i=git" },
         { name: "F5", icon: "https://www.google.com/s2/favicons?domain=f5.com&sz=128" },
@@ -39,7 +39,7 @@ export const skills = {
     Backend: [
         { name: "Node.js", icon: "https://skillicons.dev/icons?i=nodejs" },
         { name: "Express.js", icon: "https://skillicons.dev/icons?i=express" },
-        { name: "REST API", icon: "public/RESTAPI.png" },
+        // { name: "REST API", icon: "public/RESTAPI.png" },
         { name: "JWT", icon: "https://jwt.io/img/pic_logo.svg" },
         { name: "Redux", icon: "https://skillicons.dev/icons?i=redux" }
     ],
@@ -53,17 +53,18 @@ export const skills = {
         { name: "JavaScript", icon: "https://skillicons.dev/icons?i=js" }
     ],
     Networking: [
-        { name: "SD-WAN", icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-wan-internet-of-things-flaticons-lineal-color-flat-icons.png" },
-        { name: "SASE", icon: "https://www.google.com/s2/favicons?domain=paloaltonetworks.com&sz=128" },
-        { name: "Cisco", icon: "https://www.google.com/s2/favicons?domain=cisco.com&sz=128" },
-        { name: "Juniper", icon: "https://www.google.com/s2/favicons?domain=juniper.net&sz=128" },
+        { name: "SD-WAN", icon: "public/SDWAN.png" },
+        { name: "SASE", icon: "public/SASE.png" },
+        { name: "Cisco", icon: "public/CISCO.png" },
+        { name: "Juniper", icon: "public/JUNOS.png" },
         { name: "Arista", icon: "https://www.google.com/s2/favicons?domain=arista.com&sz=128" },
-        { name: "Huawei", icon: "https://www.google.com/s2/favicons?domain=huawei.com&sz=128" }
+        { name: "Huawei", icon: "https://www.google.com/s2/favicons?domain=huawei.com&sz=128" },
+        { name: "Versa", icon: "public/VERSA.svg" },
     ],
     "AI Automation": [
         { name: "RAG", icon: "https://img.icons8.com/color/48/brain--v1.png" },
         { name: "N8N", icon: "https://www.google.com/s2/favicons?domain=n8n.io&sz=128" },
-        { name: "MCP Server", icon: "https://img.icons8.com/color/48/server.png" }
+        { name: "MCP", icon: "https://img.icons8.com/color/48/server.png" }
     ],
     "Languages & Tools": [
         { name: "Python", icon: "https://skillicons.dev/icons?i=python" },
@@ -72,7 +73,7 @@ export const skills = {
         { name: "C++", icon: "https://skillicons.dev/icons?i=cpp" },
         { name: "Bash", icon: "https://skillicons.dev/icons?i=bash" },
         { name: "Postman", icon: "https://skillicons.dev/icons?i=postman" },
-        { name: "PuTTY", icon: "https://www.google.com/s2/favicons?domain=putty.org&sz=128" },
+        { name: "PuTTY", icon: "public/PuTTY.png" },
         { name: "VS Code", icon: "https://skillicons.dev/icons?i=vscode" }
     ]
 };
