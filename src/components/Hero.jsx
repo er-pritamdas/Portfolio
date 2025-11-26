@@ -2,53 +2,65 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Background from './3d/Background';
 import ThreeHeroModel from './ThreeHeroModel';
-import { personalInfo } from '../data';
+import { personalInfo, experience } from '../data';
 
 const Hero = () => {
+    // Get unique companies from experience
+    const companies = experience.map(exp => ({
+        name: exp.company,
+        logo: exp.logo
+    })).filter((v, i, a) => a.findIndex(t => (t.name === v.name)) === i);
+
     return (
-        <section className="relative w-full h-screen bg-slate-950 overflow-hidden">
+        <section id="hero" className="relative w-full h-screen bg-slate-950 overflow-hidden">
             {/* Star field background */}
             <Background />
-            
+
             {/* Globe - covers entire section, positioned to the right */}
             <ThreeHeroModel globeSize={6} offsetX={6} />
 
             {/* Content overlay */}
-            <div className="relative z-10 h-full flex items-center pointer-events-none">
-                <div className="max-w-7xl mx-auto px-6 w-full">
-                    <div className="w-full md:w-1/2">
+            <div className="relative z-10 h-full flex flex-col justify-center items-center pointer-events-none">
+                <div className="max-w-7xl mx-auto px-6 w-full text-center">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="pointer-events-auto"
+                    >
+                        <h1 className="text-7xl md:text-9xl font-bold text-white tracking-tighter mb-2 leading-none">
+                            PRITAM
+                        </h1>
+                        <h1 className="text-7xl md:text-9xl font-bold text-white tracking-tighter mb-8 leading-none">
+                            DAS
+                        </h1>
+
+                        <p className="text-sm md:text-base text-cyan-400 font-medium tracking-[0.3em] uppercase mb-12">
+                            Software Engineer, Front End & App Developer.
+                        </p>
+
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
-                            className="pointer-events-auto"
+                            transition={{ delay: 0.5 }}
+                            className="flex flex-col items-center gap-4"
                         >
-                            <h2 className="text-sm md:text-lg uppercase tracking-[0.2em] text-cyan-400 mb-4">
-                                Welcome to my portfolio
-                            </h2>
-                            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-                                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">{personalInfo.name}</span>
-                            </h1>
-                            <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-light mb-8">
-                                {personalInfo.role}
-                            </p>
-
-                            <div className="flex flex-col md:flex-row items-center gap-4 md:items-start">
-                                <a
-                                    href="#contact"
-                                    className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-full hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20"
-                                >
-                                    Contact Me
-                                </a>
-                                <a
-                                    href="#projects"
-                                    className="px-8 py-3 border border-slate-700 text-slate-300 font-medium rounded-full hover:bg-slate-800 transition-all"
-                                >
-                                    View Work
-                                </a>
+                            <span className="text-slate-500 text-xs tracking-widest uppercase mb-4">Worked With</span>
+                            <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
+                                {companies.map((company, index) => (
+                                    company.logo && (
+                                        <div key={index} className="group relative w-24 h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-50 hover:opacity-100">
+                                            <img
+                                                src={company.logo}
+                                                alt={company.name}
+                                                className="max-w-full max-h-full object-contain"
+                                            />
+                                        </div>
+                                    )
+                                ))}
                             </div>
                         </motion.div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
@@ -59,23 +71,23 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 1.5 }}
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
             >
-                <a href="#about">
-                    <div className="w-[35px] h-[64px] rounded-3xl border-4 border-slate-500 flex justify-center items-start p-2">
+                <a href="#about" className="pointer-events-auto">
+                    <div className="w-[30px] h-[50px] rounded-full border-2 border-slate-600 flex justify-center items-start p-2">
                         <motion.div
-                            animate={{ y: [0, 24, 0] }}
+                            animate={{ y: [0, 12, 0] }}
                             transition={{
                                 duration: 1.5,
                                 repeat: Infinity,
                                 repeatType: 'loop',
                             }}
-                            className="w-3 h-3 rounded-full bg-slate-300 mb-1"
+                            className="w-1.5 h-1.5 rounded-full bg-cyan-400 mb-1"
                         />
                     </div>
                 </a>
             </motion.div>
 
             {/* Gradient overlay */}
-            <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-slate-950 to-transparent z-10" />
+            <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-slate-950 to-transparent z-10" />
         </section>
     );
 };

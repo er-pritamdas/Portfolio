@@ -11,35 +11,29 @@ export const personalInfo = {
     github: "https://github.com/er-pritamdas",
 };
 
-import {
-    SiHelm, SiChef, SiJira,
-    SiVmware,
-    SiJsonwebtokens,
-    SiDaisyui
-} from "react-icons/si";
-import { FaNetworkWired, FaServer, FaInfinity, FaBrain, FaShieldAlt, FaProjectDiagram, FaTerminal } from "react-icons/fa";
-import { TbApi } from "react-icons/tb";
+
+
 
 export const skills = {
     DevOps: [
         { name: "Linux", icon: "https://skillicons.dev/icons?i=linux" },
         { name: "Docker", icon: "https://skillicons.dev/icons?i=docker" },
         { name: "Kubernetes", icon: "https://skillicons.dev/icons?i=kubernetes" },
-        { name: "Helm", icon: SiHelm },
+        { name: "Helm", icon: "https://skillicons.dev/icons?i=helm" },
         { name: "Jenkins", icon: "https://skillicons.dev/icons?i=jenkins" },
-        { name: "CI/CD", icon: FaInfinity },
+        { name: "CI/CD", icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-ci-cd-devops-flaticons-lineal-color-flat-icons.png" },
         { name: "Ansible", icon: "https://skillicons.dev/icons?i=ansible" },
-        { name: "Chef", icon: SiChef },
+        { name: "Chef", icon: "https://skillicons.dev/icons?i=chef" },
         { name: "Terraform", icon: "https://skillicons.dev/icons?i=terraform" },
         { name: "Git", icon: "https://skillicons.dev/icons?i=git" },
-        { name: "F5", icon: FaShieldAlt },
-        { name: "Jira", icon: SiJira },
+        { name: "F5", icon: "https://www.google.com/s2/favicons?domain=f5.com&sz=128" },
+        { name: "Jira", icon: "https://skillicons.dev/icons?i=jira" },
         { name: "Nginx", icon: "https://skillicons.dev/icons?i=nginx" }
     ],
     Cloud: [
         { name: "AWS", icon: "https://skillicons.dev/icons?i=aws" },
         { name: "Azure", icon: "https://skillicons.dev/icons?i=azure" },
-        { name: "VMware", icon: SiVmware }
+        { name: "VMware", icon: "https://www.google.com/s2/favicons?domain=vmware.com&sz=128" }
     ],
     Databases: [
         { name: "MongoDB", icon: "https://skillicons.dev/icons?i=mongodb" },
@@ -48,31 +42,31 @@ export const skills = {
     Backend: [
         { name: "Node.js", icon: "https://skillicons.dev/icons?i=nodejs" },
         { name: "Express.js", icon: "https://skillicons.dev/icons?i=express" },
-        { name: "REST API", icon: TbApi },
-        { name: "JWT", icon: SiJsonwebtokens },
+        { name: "REST API", icon: "https://img.icons8.com/color/48/api-settings.png" },
+        { name: "JWT", icon: "https://jwt.io/img/pic_logo.svg" },
         { name: "Redux", icon: "https://skillicons.dev/icons?i=redux" }
     ],
     Frontend: [
         { name: "React.js", icon: "https://skillicons.dev/icons?i=react" },
         { name: "Tailwind CSS", icon: "https://skillicons.dev/icons?i=tailwind" },
-        { name: "DaisyUI", icon: SiDaisyui },
+        { name: "DaisyUI", icon: "https://img.icons8.com/color/48/daisy-1.png" },
         { name: "MaterialUI", icon: "https://skillicons.dev/icons?i=materialui" },
         { name: "HTML5", icon: "https://skillicons.dev/icons?i=html" },
         { name: "CSS3", icon: "https://skillicons.dev/icons?i=css" },
         { name: "JavaScript", icon: "https://skillicons.dev/icons?i=js" }
     ],
     Networking: [
-        { name: "SD-WAN", icon: FaNetworkWired },
-        { name: "SASE", icon: FaShieldAlt },
-        { name: "Cisco", icon: FaNetworkWired },
-        { name: "Juniper", icon: FaNetworkWired },
-        { name: "Arista", icon: FaNetworkWired },
-        { name: "Huawei", icon: FaNetworkWired }
+        { name: "SD-WAN", icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-wan-internet-of-things-flaticons-lineal-color-flat-icons.png" },
+        { name: "SASE", icon: "https://www.google.com/s2/favicons?domain=paloaltonetworks.com&sz=128" },
+        { name: "Cisco", icon: "https://www.google.com/s2/favicons?domain=cisco.com&sz=128" },
+        { name: "Juniper", icon: "https://www.google.com/s2/favicons?domain=juniper.net&sz=128" },
+        { name: "Arista", icon: "https://www.google.com/s2/favicons?domain=arista.com&sz=128" },
+        { name: "Huawei", icon: "https://www.google.com/s2/favicons?domain=huawei.com&sz=128" }
     ],
     "AI Automation": [
-        { name: "RAG", icon: FaBrain },
-        { name: "N8N", icon: FaProjectDiagram },
-        { name: "MCP Server", icon: FaServer }
+        { name: "RAG", icon: "https://img.icons8.com/color/48/brain--v1.png" },
+        { name: "N8N", icon: "https://www.google.com/s2/favicons?domain=n8n.io&sz=128" },
+        { name: "MCP Server", icon: "https://img.icons8.com/color/48/server.png" }
     ],
     "Languages & Tools": [
         { name: "Python", icon: "https://skillicons.dev/icons?i=python" },
@@ -81,7 +75,7 @@ export const skills = {
         { name: "C++", icon: "https://skillicons.dev/icons?i=cpp" },
         { name: "Bash", icon: "https://skillicons.dev/icons?i=bash" },
         { name: "Postman", icon: "https://skillicons.dev/icons?i=postman" },
-        { name: "PuTTY", icon: FaTerminal },
+        { name: "PuTTY", icon: "https://www.google.com/s2/favicons?domain=putty.org&sz=128" },
         { name: "VS Code", icon: "https://skillicons.dev/icons?i=vscode" }
     ]
 };
@@ -89,10 +83,11 @@ export const skills = {
 export const experience = [
     {
         company: "Tata Communications",
-        role: "SDWAN/SASE Network Automation Engineer",
+        role: "DevOps Engineer",
         period: "Jul 2023 – Present",
         location: "Chennai, India",
         website: "https://tatacommunications.com",
+        logo: "https://www.google.com/s2/favicons?domain=tatacommunications.com&sz=128",
         tech: ["Python", "Azure", "Terraform", "F5"],
         description: [
             "Automated QoS testing lifecycle with 17+ use cases improving efficiency 70%",
@@ -115,6 +110,7 @@ export const experience = [
         period: "Feb 2022 – May 2022",
         location: "Hyderabad, India",
         website: "https://highradius.com",
+        logo: "https://www.google.com/s2/favicons?domain=highradius.com&sz=128",
         tech: ["React", "Java", "SQL"],
         description: [
             "Built full-stack enterprise solution connecting ML models with React frontend",
@@ -128,6 +124,7 @@ export const experience = [
         period: "Jan 2022 - Mar 2022",
         location: "Remote",
         website: "https://letsgrowmore.in",
+        logo: "https://www.google.com/s2/favicons?domain=letsgrowmore.in&sz=128",
         tech: ["HTML", "CSS", "JavaScript", "React"],
         description: [
             "Converted UI/UX designs into pixel-perfect web interfaces with HTML, CSS, JS.",
@@ -189,10 +186,62 @@ export const education = [
 ];
 
 export const certifications = [
-    "AWS – Solutions Architect (In Progress)",
-    "Cisco – CCNA (In Progress)",
-    "PagerDuty DevOps Professional",
-    "Canonical Ubuntu Linux Professional",
-    "freeCodeCamp – JS DSA",
-    "Atlassian Agile PM Certificate",
+    {
+        name: "GitHub Professional Certificate",
+        issuer: "GitHub",
+        date: "Nov 2025",
+        logo: "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+        skills: ["GitHub", "Version Control"],
+        link: "#"
+    },
+    {
+        name: "Ubuntu Linux Professional Certificate",
+        issuer: "Canonical",
+        date: "Nov 2025",
+        logo: "https://www.google.com/s2/favicons?domain=ubuntu.com&sz=128",
+        skills: ["Linux System Administration", "User Management"],
+        link: "#"
+    },
+    {
+        name: "DevOps Professional Certificate",
+        issuer: "PagerDuty",
+        date: "Oct 2025",
+        logo: "https://www.google.com/s2/favicons?domain=pagerduty.com&sz=128",
+        skills: ["Infrastructure as code (IaC)", "CI/CD"],
+        link: "#"
+    },
+    {
+        name: "Docker Foundations Professional Certificate",
+        issuer: "Docker, Inc",
+        date: "Oct 2025",
+        logo: "https://www.google.com/s2/favicons?domain=docker.com&sz=128",
+        skills: ["Docker Products", "Containerization"],
+        link: "#"
+    },
+    {
+        name: "Atlassian Agile Project Management Professional Certificate",
+        issuer: "Atlassian",
+        date: "Jan 2025",
+        logo: "https://www.google.com/s2/favicons?domain=atlassian.com&sz=128",
+        skills: ["Agile Project Management", "Project Management"],
+        link: "#"
+    },
+    {
+        name: "Getting Started with AI on Jetson Nano",
+        issuer: "NVIDIA",
+        date: "Mar 2022",
+        logo: "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+        skills: ["Artificial Intelligence (AI)"],
+        credentialId: "441fc3908d374b969fe31d6b7e850022",
+        link: "#"
+    },
+    {
+        name: "FUNDAMENTALS OF DEEP LEARNING",
+        issuer: "NVIDIA",
+        date: "Jan 2022",
+        logo: "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+        skills: ["Deep Learning"],
+        credentialId: "614066ca7ee04870af5334a01ebc9346",
+        link: "#"
+    }
 ];

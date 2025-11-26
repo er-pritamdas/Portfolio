@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 
 import { Toaster } from 'react-hot-toast';
@@ -20,6 +21,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Certifications />
         <Contact />
       </main>
 

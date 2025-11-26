@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -15,11 +15,12 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
+        { name: '// 01 home', href: '#hero' },
+        { name: '// 02 about', href: '#about' },
+        { name: '// 03 experience', href: '#experience' },
+        { name: '// 04 work', href: '#projects' },
+        { name: '// 05 certifications', href: '#certifications' },
+        { name: '// 06 contact', href: '#contact' },
     ];
 
     return (
@@ -28,8 +29,8 @@ const Navbar = () => {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-                <a href="#" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                    Pritam.dev
+                <a href="#" className="text-2xl font-bold text-cyan-400 tracking-tighter">
+                    PritamDas<span className="text-purple-500">._</span>
                 </a>
 
                 {/* Desktop Menu */}
@@ -38,27 +39,11 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-slate-300 hover:text-cyan-400 transition-colors text-sm font-medium"
+                            className="text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium tracking-wide"
                         >
                             {link.name}
                         </a>
                     ))}
-                    <a
-                        href="https://github.com/er-pritamdas"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-300 hover:text-white transition-colors"
-                    >
-                        <Github size={20} />
-                    </a>
-                    <a
-                        href="https://linkedin.com/in/er-pritamdas"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-300 hover:text-white transition-colors"
-                    >
-                        <Linkedin size={20} />
-                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
