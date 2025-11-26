@@ -36,7 +36,7 @@ const Hero = () => {
                         </h1>
 
                         <p className="text-sm md:text-base text-cyan-400 font-medium tracking-[0.3em] uppercase mb-12">
-                            Software Engineer, Front End & App Developer.
+                            Full Stack Developer • DevOps Engineer • AI Automation Specialist • Network Engineer
                         </p>
 
                         <motion.div
@@ -49,7 +49,7 @@ const Hero = () => {
                             <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
                                 {companies.map((company, index) => (
                                     company.logo && (
-                                        <div key={index} className="group relative w-24 h-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-50 hover:opacity-100">
+                                        <div key={index} className="group relative w-32 h-16 md:w-40 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-50 hover:opacity-100">
                                             <img
                                                 src={company.logo}
                                                 alt={company.name}

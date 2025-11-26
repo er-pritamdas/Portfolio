@@ -43,6 +43,17 @@ const ExperienceCard = ({ exp, index, isOpen, toggleOpen }) => {
                     >
                         <div className="p-6 md:p-8">
                             <div className="flex flex-col md:flex-row gap-8">
+                                {exp.logo && (
+                                    <div className="hidden md:flex flex-col items-center justify-start min-w-[200px] pt-2">
+                                        <div className={`flex items-center justify-center ${exp.company === "Tata Communications" ? "w-40 h-40" : "w-32 h-32"}`}>
+                                            <img
+                                                src={exp.logo}
+                                                alt={`${exp.company} logo`}
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
+                                    </div>
+                                )}
                                 <div className="flex-grow">
                                     <div className="flex flex-wrap gap-6 mb-6 text-sm text-slate-400">
                                         <div className="flex items-center gap-2">
@@ -82,18 +93,6 @@ const ExperienceCard = ({ exp, index, isOpen, toggleOpen }) => {
                                         ))}
                                     </div>
                                 </div>
-
-                                {exp.logo && (
-                                    <div className="hidden md:flex flex-col items-center justify-center min-w-[150px]">
-                                        <div className="w-32 h-32  rounded-xl p-4 flex items-center justify-center">
-                                            <img
-                                                src={exp.logo}
-                                                alt={`${exp.company} logo`}
-                                                className="w-full h-full object-contain"
-                                            />
-                                        </div>
-                                    </div>
-                                )}
                             </div>
                         </div>
                     </motion.div>

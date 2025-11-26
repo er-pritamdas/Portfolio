@@ -49,7 +49,7 @@ const Skills = () => {
             <div className="flex flex-col md:flex-row flex-1 max-w-[1600px] mx-auto w-full relative z-10">
 
                 {/* Left Sidebar - Filters */}
-                <div className="w-full md:w-1/4 px-3 md:pl-20 flex flex-col gap-4 z-50 mb-10 md:mb-0 md:pt-20">
+                <div className="w-full md:w-1/6 px-3 md:pl-12 flex flex-col gap-4 z-50 mb-10 md:mb-0 md:pt-20">
                     <h3 className="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-4 hidden md:block">Categories</h3>
                     <div className="flex flex-wrap md:flex-col gap-3">
                         <button
@@ -79,7 +79,7 @@ const Skills = () => {
                 </div>
 
                 {/* Right Content - Orbital System */}
-                <div className="w-full md:w-3/4 relative h-[600px] md:h-[800px] flex justify-center items-end overflow-hidden">
+                <div className="w-full md:w-5/6 relative h-[600px] md:h-[800px] flex justify-center items-end overflow-hidden">
 
                     {/* Earth / Core */}
                     <div className="absolute bottom-[-100px] w-[600px] h-[200px] bg-gradient-to-t from-blue-600 to-cyan-400 rounded-[100%] blur-3xl opacity-20 z-0"></div>

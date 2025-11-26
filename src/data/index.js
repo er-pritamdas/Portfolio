@@ -20,7 +20,7 @@ export const skills = {
         { name: "Jenkins", icon: "https://skillicons.dev/icons?i=jenkins" },
         // { name: "CI/CD", icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-ci-cd-devops-flaticons-lineal-color-flat-icons.png" },
         { name: "Ansible", icon: "https://skillicons.dev/icons?i=ansible" },
-        { name: "Chef", icon: "public/CHEF.png" },
+        { name: "Chef", icon: "/CHEF.png" },
         { name: "Terraform", icon: "https://skillicons.dev/icons?i=terraform" },
         { name: "Git", icon: "https://skillicons.dev/icons?i=git" },
         { name: "F5", icon: "https://www.google.com/s2/favicons?domain=f5.com&sz=128" },
@@ -53,13 +53,13 @@ export const skills = {
         { name: "JavaScript", icon: "https://skillicons.dev/icons?i=js" }
     ],
     Networking: [
-        { name: "SD-WAN", icon: "public/SDWAN.png" },
-        { name: "SASE", icon: "public/SASE.png" },
-        { name: "Cisco", icon: "public/CISCO.png" },
-        { name: "Juniper", icon: "public/JUNOS.png" },
+        { name: "SD-WAN", icon: "/SDWAN.png" },
+        { name: "SASE", icon: "/SASE.png" },
+        { name: "Cisco", icon: "/CISCO.png" },
+        { name: "Juniper", icon: "/JUNOS.png" },
         { name: "Arista", icon: "https://www.google.com/s2/favicons?domain=arista.com&sz=128" },
         { name: "Huawei", icon: "https://www.google.com/s2/favicons?domain=huawei.com&sz=128" },
-        { name: "Versa", icon: "public/VERSA.svg" },
+        { name: "Versa", icon: "/VERSA.svg" },
     ],
     "AI Automation": [
         { name: "RAG", icon: "https://img.icons8.com/color/48/brain--v1.png" },
@@ -73,7 +73,7 @@ export const skills = {
         { name: "C++", icon: "https://skillicons.dev/icons?i=cpp" },
         { name: "Bash", icon: "https://skillicons.dev/icons?i=bash" },
         { name: "Postman", icon: "https://skillicons.dev/icons?i=postman" },
-        { name: "PuTTY", icon: "public/PuTTY.png" },
+        { name: "PuTTY", icon: "/PuTTY.png" },
         { name: "VS Code", icon: "https://skillicons.dev/icons?i=vscode" }
     ]
 };
@@ -86,7 +86,7 @@ export const experience = [
         period: "Jul 2023 – Present",
         location: "Chennai, India",
         website: "https://tatacommunications.com",
-        logo: "https://www.google.com/s2/favicons?domain=tatacommunications.com&sz=128",
+        logo: "/TATACOMMLOGO.png",
         tech: ["Python", "Azure", "Terraform", "F5"],
         description: [
             "Automated QoS testing lifecycle with 17+ use cases improving efficiency 70%",
@@ -109,7 +109,7 @@ export const experience = [
         period: "Feb 2022 – May 2022",
         location: "Hyderabad, India",
         website: "https://highradius.com",
-        logo: "https://www.google.com/s2/favicons?domain=highradius.com&sz=128",
+        logo: "https://cdn.highradius.com/wp-content/uploads/2024/06/HighRadius-Updated.svg",
         tech: ["React", "Java", "SQL"],
         description: [
             "Built full-stack enterprise solution connecting ML models with React frontend",
@@ -143,7 +143,7 @@ export const projects = [
         tech: ["MERN", "Redux Toolkit", "Tailwind", "DaisyUI", "Docker", "K8s", "Jenkins"],
         description: "A comprehensive tracker with modular dashboards, dynamic charts, and full CI/CD pipeline.",
         category: "Web Development",
-        image: "https://placehold.co/600x400/1e293b/06b6d4?text=Progress+Pulse",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQFrkAd5H1VEww/feedshare-shrink_1280/B56Zn6w2DFHUAs-/0/1760848733533?e=1766016000&v=beta&t=U5xdjWKgKnsX3qwveWj7KTTD86imoT906v82Nb6ndLw",
         featured: true,
     },
     {
@@ -152,16 +152,7 @@ export const projects = [
         tech: ["Google Drive", "Gemini AI", "Pinecone", "n8n"],
         description: "Automated chatbot for querying company documents using RAG architecture.",
         category: "AI Automation",
-        image: "https://placehold.co/600x400/1e293b/a855f7?text=RAG+Chatbot",
-        featured: false,
-    },
-    {
-        title: "AI Agent for ATS",
-        subtitle: "Resume Optimization",
-        tech: ["AI Agents", "LaTeX", "Python"],
-        description: "Agent that analyzes resumes against job descriptions and rewrites them in LaTeX.",
-        category: "AI Automation",
-        image: "https://placehold.co/600x400/1e293b/a855f7?text=AI+Agent",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQGWaAfOd70iPA/feedshare-shrink_1280/B56Zi4OowKHQAk-/0/1755437502304?e=1766016000&v=beta&t=JO4TtA4QbcD_c6gn0lytT46SvlZ6ZaEMQwSZaJqpHSA",
         featured: false,
     },
     {
@@ -170,7 +161,16 @@ export const projects = [
         tech: ["MCP", "Versa", "Zscaler", "Copilot", "Claude"],
         description: "Integrated network management tools with AI assistants for enhanced workflows.",
         category: "DevOps",
-        image: "https://placehold.co/600x400/1e293b/22c55e?text=MCP+Server",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQEPLOFuTTiHjw/feedshare-shrink_2048_1536/B56Zja5sf2HAAw-/0/1756019216070?e=1766016000&v=beta&t=vfxqyBP9M4mfRmMyHXeTPZB507U133ZeHRkD2LO5jpw",
+        featured: false,
+    },
+    {
+        title: "AI Agent for ATS",
+        subtitle: "Resume Optimization",
+        tech: ["AI Agents", "LaTeX", "Python"],
+        description: "Agent that analyzes resumes against job descriptions and rewrites them in LaTeX.",
+        category: "AI Automation",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQHDP79OncMBxA/feedshare-shrink_2048_1536/B56ZiUD3HQHkAw-/0/1754830697716?e=1766016000&v=beta&t=gMqamR6yxOVH3ba9ikiLrL69CwgBK7EtraTtd5Akp0k",
         featured: false,
     },
 ];
