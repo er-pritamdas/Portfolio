@@ -389,7 +389,7 @@ export const blogs = [
         category: "DevOps",
         image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&q=80",
         tech: ["Jenkins", "Docker", "CI/CD", "Kubernetes"],
-        link: "https://medium.com/@er.pritamdas22/scalable-cicd-pipelines",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/scalable-cicd-pipelines",
         description: "Learn how to set up robust CI/CD pipelines using Jenkins and Docker. This guide covers containerization strategies, automated testing, and deployment best practices for modern applications.",
         featured: true
     },
@@ -400,7 +400,7 @@ export const blogs = [
         category: "Network Engineering",
         image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
         tech: ["Python", "Ansible", "Netmiko", "SD-WAN"],
-        link: "https://medium.com/@er.pritamdas22/network-automation-python",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/network-automation-python",
         description: "Discover how Python can revolutionize network management. From automating device configurations to implementing SD-WAN solutions, this blog walks you through real-world automation scenarios.",
         featured: false
     },
@@ -411,7 +411,7 @@ export const blogs = [
         category: "AI Automation",
         image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
         tech: ["RAG", "Gemini AI", "Pinecone", "Vector Databases"],
-        link: "https://medium.com/@er.pritamdas22/rag-architecture-guide",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/rag-architecture-guide",
         description: "Deep dive into RAG (Retrieval-Augmented Generation) architecture. Learn how to build intelligent chatbots that can query company documents, understand context, and provide accurate responses using AI.",
         featured: false
     },
@@ -422,7 +422,7 @@ export const blogs = [
         category: "Web Development",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
         tech: ["React", "Node.js", "MongoDB", "Express", "Redux"],
-        link: "https://medium.com/@er.pritamdas22/mern-stack-best-practices",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/mern-stack-best-practices",
         description: "Explore the MERN stack architecture and learn best practices for building scalable full-stack applications. From state management to API design, this guide covers everything you need.",
         featured: false
     },
@@ -433,7 +433,7 @@ export const blogs = [
         category: "DevOps",
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
         tech: ["Terraform", "Azure", "AWS", "Infrastructure as Code"],
-        link: "https://medium.com/@er.pritamdas22/terraform-infrastructure-code",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/terraform-infrastructure-code",
         description: "Master Infrastructure as Code with Terraform. This comprehensive guide covers provisioning cloud resources, managing state files, and implementing best practices for scalable infrastructure.",
         featured: false
     },
@@ -444,7 +444,7 @@ export const blogs = [
         category: "AI Automation",
         image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
         tech: ["MCP", "Claude", "VSCode Copilot", "AI Agents"],
-        link: "https://medium.com/@er.pritamdas22/ai-agents-mcp-servers",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/ai-agents-mcp-servers",
         description: "Learn how to integrate MCP (Model Context Protocol) servers with AI assistants like Claude and Copilot. Automate your development workflows and boost productivity with intelligent agents.",
         featured: false
     },
@@ -455,7 +455,7 @@ export const blogs = [
         category: "Network Engineering",
         image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
         tech: ["SD-WAN", "SASE", "Network Security", "Cloud Networking"],
-        link: "https://medium.com/@er.pritamdas22/sdwan-sase-future",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/sdwan-sase-future",
         description: "Explore the evolution of network architecture with SD-WAN and SASE technologies. Understand how these solutions provide secure, scalable, and flexible network connectivity for modern enterprises.",
         featured: false
     },
@@ -466,7 +466,7 @@ export const blogs = [
         category: "DevOps",
         image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800&q=80",
         tech: ["Docker", "Kubernetes", "Containerization", "Orchestration"],
-        link: "https://medium.com/@er.pritamdas22/docker-kubernetes-guide",
+        link: "https://personal-blog-phi-henna.vercel.app/blog/docker-kubernetes-guide",
         description: "Master containerization and orchestration with Docker and Kubernetes. Learn deployment strategies, scaling techniques, and how to manage containerized applications in production environments.",
         featured: false
     },
