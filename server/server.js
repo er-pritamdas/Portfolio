@@ -10,12 +10,13 @@ const PORT = process.env.PORT || 5000;
 
 // CORS Configuration
 const corsOptions = {
-    origin: [
-        process.env.FRONTEND_URL,
-        'https://portfolio-i92o.onrender.com',
-        'https://portfolio-puce-phi-a8189zd8da.vercel.app',
-        'http://localhost:5174'
-    ], // removes undefined if env var isn't set
+    origin: "*",
+    // [
+    //     process.env.FRONTEND_URL,
+    //     'https://portfolio-i92o.onrender.com',
+    //     'https://portfolio-puce-phi-a8189zd8da.vercel.app',
+    //     'http://localhost:5174'
+    // ], // removes undefined if env var isn't set
     credentials: true,
     optionsSuccessStatus: 200
 };
