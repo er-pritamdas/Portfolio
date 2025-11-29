@@ -8,6 +8,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
+// ============================================
+// 1. TRUST PROXY - MUST BE FIRST!
+// ============================================
+// This is CRITICAL for Render deployment
+app.set('trust proxy', 1);
+
 // CORS Configuration
 const corsOptions = {
     origin: "*",
@@ -30,6 +37,8 @@ const limiter = rateLimit({
     windowMs: 60 * 60 * 1000, // 1 hour
     max: 10, // Limit each IP to 10 requests per windowMs
     message: { success: false, message: 'Too many requests, please try again later.' },
+    standardHeaders: true,
+    legacyHeaders: false,
 });
 
 // Apply rate limiting
