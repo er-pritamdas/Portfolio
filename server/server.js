@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 5000;
 const corsOptions = {
     origin: [
         process.env.FRONTEND_URL,
+        'https://portfolio-i92o.onrender.com',
         'http://localhost:5174'
     ].filter(Boolean), // removes undefined if env var isn't set
     credentials: true,
