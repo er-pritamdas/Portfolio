@@ -15,7 +15,7 @@ const corsOptions = {
         'https://portfolio-i92o.onrender.com',
         'https://portfolio-puce-phi-a8189zd8da.vercel.app',
         'http://localhost:5174'
-    ].filter(Boolean), // removes undefined if env var isn't set
+    ], // removes undefined if env var isn't set
     credentials: true,
     optionsSuccessStatus: 200
 };
